@@ -1,38 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monster</title>
+    <link rel = "stylesheet" href="game.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+    </style>
+</head>
 
-<!doctype html>
-<html lang= "en-us"> 
-<head> 
-    <meta charset= "utf-8">
-    <title> Home| Peerayac  </title>
-    </head>
-    <body> 
-    <div id= "wrapper">
-        <header> 
 
+<body>
+    <div id ="board">
+        <li> Clock:  <spam id = "time"> 40 </spam></li>
+
+        <li><div ontouchstart ="startGame();" id="button"> Play</div></li> 
         
-        <p class= "tagline"> Peeraya</p>
-        <h1> Welcome </h1>
-             </header>
-        <nav> 
-            Navigation links 
-            </nav>
-            
-       <main>
- 
-        <a href="/collect/game.html"> Game
-        </a> <br> 
+        <li>Score:  <spam id = "score"> 0 </spam></li>
+  
+        <script src = "GameController.js"></script>
+
+
+<!-- this is going to display the screen of the game -->
+    <div id = "scene">
+<img src = "picture/67446364_458314111672395_1435246339381264384_n.png" id = "human">
+
+
+
+<img style = "width: 70px; height:80px;top: 0px; left: 480px; position: absolute;"
+ onclick ="fall(this)" src = "picture/monster1.png" class = "monster">
+ <img style = "width: 70px; height:80px;top: 10px; left: 380px; position: absolute;"
+ onclick ="fall(this)" src = "picture/monster2.png" class = "monster">
+ <img style = "width: 70px; height:80px;top: 30px; left: 280px; position: absolute;"
+ onclick ="fall(this)" src = "picture/monster3.png" class = "monster">
+ <img style = "width: 70px; height:80px;top: 30px; left: 180px; position: absolute;"
+ onclick ="fall(this)" src = "picture/monster4.png" class = "monster">
+ <img style = "width: 70px; height:80px;top: 20px; left: 80px; position: absolute;"
+ onclick ="fall(this)" src = "picture/monster5.png" class = "monster">
+
+</div>
+
+
+    <p style="width: 400px; margin:0 auto;">Highest score: <spam id= "high"> 0 </spam></p>
+
+
+</div>
+
+<footer>
+
+<p class = 'detail'>
+    Get rid of the monsters
+</p>
+<p class = 'detail'>
+    Don't let them attack the guy
+
+</p>
+<p class = 'detail'>
+        Click button 'Play' to start the game
     
-           
-           
-        </main>
-        <footer>
-        &copy; 2019 Portfolio
-        
-        </footer>
-        
-        
-        </div>
-    
-    
-    </body>
+    </p>
+
+
+</footer>
+
+</body>
 </html>

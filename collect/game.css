@@ -1,0 +1,94 @@
+html,
+body{
+    font-family:'Acme',sans-serif;
+    text-transform: uppercase; 
+    font-size:large;
+}
+#scene{
+ width: 600px;
+ height: 600px;
+ background-image: url(picture/cartoon-2550689_960_720.png);
+ overflow: hidden;   
+ margin: 16px auto;
+ position: relative;
+ align-items: center;
+}
+#human{
+position:absolute;
+display: block;
+width: 600px;
+bottom: 0;
+}
+.monster{
+    position: relative;
+    width: 16px;
+    height: auto;
+    transition: top .5 ease; 
+
+}
+#board
+{
+    width: 600px;
+    margin: 4px auto;
+    padding:0;
+    background-color:slategray;
+}
+#board li {
+    list-style: none;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 4px;
+    text-align: center;
+    float: right;
+}
+
+#button
+{
+    background-color:salmon;
+    width: 80px;
+    margin: 4px auto;
+    padding:0;
+
+}
+#button:active
+{
+    background: yellow;
+}
+spam 
+{
+font-weight: bold;
+color:white;
+text-align: center;
+
+}
+.monster
+{
+animation-duration: 5s;
+animation-name: move;
+}
+.detail
+{
+    width: 600px;
+    margin: 4px auto;
+    padding:0;
+    text-align: center;
+    border: 5px solid gray;
+    
+}
+
+@keyframes move
+{
+    from {top: 20px;}
+    to {bottom: 200px;}
+}
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  @media only screen and (min-width: 500px)
+  {
+
+  }
+    
+
